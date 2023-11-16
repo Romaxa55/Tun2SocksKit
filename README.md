@@ -1,35 +1,34 @@
 # Tun2SocksKit
 
-[![Downloads][0]][1]
+[![Загрузки][0]][1]
 
 [0]: https://img.shields.io/github/downloads/arror/Tun2SocksKit/total.svg
 [1]: https://github.com/arror/Tun2SocksKit/releases/latest
 
-⚠️⚠️⚠️不保证每个版本都可用，请自行[Fork](https://github.com/daemooon/Tun2SocksKit/fork)发布⚠️⚠️⚠️
+⚠️⚠️⚠️ Не гарантируется работоспособность каждой версии, пожалуйста, [сделайте Fork](https://github.com/daemooon/Tun2SocksKit/fork) для публикации ⚠️⚠️⚠️
 
-### 重要变更
+### Важные изменения
 
-> `2.4.0` 支持maccatalyst（arm64、x86_64）by [@hossinasaadi](https://github.com/hossinasaadi)
+> `2.4.0` Поддержка maccatalyst (arm64, x86_64) от [@hossinasaadi](https://github.com/hossinasaadi)
 
-> `2.2.1` 支持macOS（arm64、x86_64）
+> `2.2.1` Поддержка macOS (arm64, x86_64)
 
-> ~~`2.2.0` 支持macOS（arm64、x86_64）~~
+> ~~`2.2.0` Поддержка macOS (arm64, x86_64)~~
 
-> `2.1.16` 支持iPhone模拟器，[hev-socks5-tunnel-iphonesimulator](https://github.com/daemooon/hev-socks5-tunnel-iphonesimulator)实现
+> `2.1.16` Поддержка iPhone симулятора, реализация через [hev-socks5-tunnel-iphonesimulator](https://github.com/daemooon/hev-socks5-tunnel-iphonesimulator)
 
-> ~~`2.1.10` 支持arm64的模拟器~~
+> ~~`2.1.10` Поддержка симулятора arm64~~
 
-> `2.0.1` 使用[hev-socks5-tunnel](https://github.com/heiher/hev-socks5-tunnel)替换[leaf](https://github.com/eycorsican/leaf)实现
+> `2.0.1` Использование [hev-socks5-tunnel](https://github.com/heiher/hev-socks5-tunnel) вместо [leaf](https://github.com/eycorsican/leaf)
 
-
-### 使用
+### Использование
 ```swift
 import Tun2SocksKit
 
 Socks5Tunnel.run(withFileDescriptor: 4, configFilePath: localConfigFileURL.path(percentEncoded: false))
 ```
 
-### 配置文件（详见[hev-socks5-tunnel](https://github.com/heiher/hev-socks5-tunnel)）
+### Конфигурационный файл (см. подробнее в hev-socks5-tunnel)[hev-socks5-tunnel](https://github.com/heiher/hev-socks5-tunnel)）
 ```yml
 tunnel:
   mtu: 9000
